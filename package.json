@@ -9,7 +9,7 @@
   "scripts": {
     "build":"cp src/datediff.js datediff.js && npm run uglify",
     "uglify":"node node_modules/uglify-js/bin/uglifyjs datediff.js -c -m -o datediff.min.js",
-    "test": "node ./node_modules/karma/bin/karma start"
+    "test": "node ./node_modules/karma/bin/karma start --single-run"
   },
   "author": "Dmitriy Filipenko <dmitriy.filipenko@grammarly.com>",
   "license": "MIT",

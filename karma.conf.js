@@ -10,10 +10,10 @@ module.exports = function(config) {
     port: 9876,
     runnerPort: 9100,
     colors: true,
-    autoWatch: false,
+    autoWatch: true,
     browsers: ['PhantomJS'],
     captureTimeout: 5000,
-    singleRun: true,
+    singleRun: false,
     reportSlowerThan: 500
   });
 
