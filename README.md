@@ -8,8 +8,8 @@ Example
 
 ```js
 var from = new Date(2012, 8, 0,0),
- 		to = new Date(2014, 0, 1, 0),
- 		diff;
+    to = new Date(2014, 0, 1, 0),
+    diff;
 
 diff = datediff(from, to);
 console.log( diff );
