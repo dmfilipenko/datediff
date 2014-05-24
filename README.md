@@ -18,11 +18,11 @@ diff = datediff(from, to);
 
 ```js
 {
+	years: 1,
+	months: 4,
 	days: 3
-	hours: 2
-	minutes: 46
-	months: 4
+	hours: 2,
+	minutes: 46,
 	seconds: 1
-	years: 1
 }
 ```
