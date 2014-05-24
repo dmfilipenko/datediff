@@ -21,23 +21,11 @@ function datediff(fromDate, toDate) {
       };
 
   if (years < 0) return diffDate;
-  if (years > 0) {
-    diffDate.years = years;
-  }
-  if (months > 0) {
-    diffDate.months = months;
-  }
-  if (days > 0) {
-    diffDate.days = days;
-  }
-  if (hours > 0) {
-    diffDate.hours = hours;
-  }
-  if (minutes > 0) {
-    diffDate.minutes = minutes;
-  }
-  if (seconds > 0) {
-    diffDate.seconds = seconds;
-  }
+  diffDate.years = years > 0 ? years : 0;
+  diffDate.months = months > 0 ? months : 0;
+  diffDate.days = days > 0 ? days : 0;
+  diffDate.hours = hours > 0 ? hours : 0;
+  diffDate.minutes = minutes > 0 ? minutes : 0;
+  diffDate.seconds = seconds > 0 ? seconds : 0;
   return diffDate;
 }
