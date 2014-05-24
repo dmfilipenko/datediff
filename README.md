@@ -12,6 +12,7 @@ var from = new Date(2012, 8, 0,0,10, 12),
     diff;
 
 diff = datediff(from, to);
+console.log( diff )
 
 ```
 ---------
