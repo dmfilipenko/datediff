@@ -7,6 +7,8 @@
     "test": "test"
   },
   "scripts": {
+    "build":"cp src/datediff.js datediff.js && npm run uglify",
+    "uglify":"node node_modules/uglify-js/bin/uglifyjs datediff.js -c -m -o datediff.min.js",
     "test": "node ./node_modules/karma/bin/karma start"
   },
   "author": "Dmitriy Filipenko <dmitriy.filipenko@grammarly.com>",
@@ -15,6 +17,8 @@
     "karma": "^0.12.16",
     "karma-spec-reporter": "0.0.13",
     "karma-phantomjs-launcher": "^0.1.4",
-    "karma-jasmine": "^0.1.5"
+    "karma-jasmine": "^0.1.5",
+    "uglifyjs": "^2.3.6",
+    "uglify-js": "^2.4.13"
   }
 }
