@@ -7,8 +7,8 @@ Example
 =====
 
 ```js
-var from = new Date(2012, 8, 0,0),
- 		to = new Date(2014, 0, 1, 0),
+var from = new Date(2014, 8, 0,0,10, 12),
+ 		to = new Date(2012, 0, 1, 0, 56, 13),
  		diff;
 
 diff = datediff(from, to);
@@ -21,9 +21,9 @@ console.log( diff );
 {
     years: 2,
     months: 7,
-    days: 30
-    hours: 0
-    minutes: 0
-    seconds: 0
+    days: 29,
+    hours: 23,
+    minutes: 13,
+    seconds: 59
 }
 ```
