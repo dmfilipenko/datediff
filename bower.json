@@ -1,0 +1,15 @@
+{
+  "name": "datediff",
+  "version": "0.0.1",
+  "authors": [
+    "Dmitriy Filipenko <dmitriy.filipenko@grammarly.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

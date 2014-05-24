@@ -1,0 +1,20 @@
+{
+  "name": "datediff",
+  "version": "0.0.1",
+  "description": "Simple module for calculate difference bettwen two date",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "Dmitriy Filipenko <dmitriy.filipenko@grammarly.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "^0.12.16",
+    "karma-spec-reporter": "0.0.13",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
+  }
+}
