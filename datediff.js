@@ -3,7 +3,7 @@ function datediff(fromDate, toDate) {
   var startDate = new Date(1970, 0, 1, 0).getTime(),
       now = new Date(),
       toDate = toDate && toDate instanceof Date ? toDate : now,
-      diff = fromDate - toDate,
+      diff = toDate - fromDate,
       date = new Date(startDate + diff),
       years = date.getFullYear() - 1970,
       months = date.getMonth(),

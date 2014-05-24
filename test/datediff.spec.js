@@ -24,8 +24,8 @@ describe('Difference date', function() {
   });
 
   it('Should return 0 values if "to date" bigger then "from date"', function() {
-    from = new Date(2012, 0, 1, 0);
-    to = new Date(2014, 0, 1, 0);
+    to = new Date(2012, 0, 1, 0);
+    from = new Date(2014, 0, 1, 0);
     diff = datediff(from, to);
     expect(diff.years).toBe(0);
     expect(diff.months).toBe(0);
@@ -34,39 +34,39 @@ describe('Difference date', function() {
     expect(diff.seconds).toBe(0);
   });
   it('Should return correct diff when leap year + 1 days', function() {
-    from = new Date(2013, 0, 1, 0);
-    to = new Date(2012, 0, 1, 0);
+    to = new Date(2013, 0, 1, 0);
+    from = new Date(2012, 0, 1, 0);
     diff = datediff(from, to);
     expect(diff.years).toBe(1);
     expect(diff.months).toBe(0);
     expect(diff.days).toBe(1);
   });
   it('Should return correct years', function() {
-    from = new Date(2014, 0, 1, 0);
-    to = new Date(1970, 0, 1, 0);
+    to = new Date(2014, 0, 1, 0);
+    from = new Date(1970, 0, 1, 0);
     diff = datediff(from, to);
     expect(diff.years).toBe(44);
   });
 
   it('Should return correct month', function() {
-    from = new Date(2013, 1, 1, 0);
-    to = new Date(2012, 0, 1, 0);
+    to = new Date(2013, 1, 1, 0);
+    from = new Date(2012, 0, 1, 0);
     diff = datediff(from, to);
     expect(diff.years).toBe(1);
     expect(diff.months).toBe(1);
     expect(diff.days).toBe(1);
   });
   it('Should return correct days', function() {
-    from = new Date(2012, 0, 31, 0);
-    to = new Date(2012, 0, 1, 0);
+    to = new Date(2012, 0, 31, 0);
+    from = new Date(2012, 0, 1, 0);
     diff = datediff(from, to);
     expect(diff.years).toBe(0);
     expect(diff.months).toBe(0);
     expect(diff.days).toBe(30);
   });
   it('Should return correct hours', function() {
-    from = new Date(2012, 0, 1, 23);
-    to = new Date(2012, 0, 1, 11);
+    to = new Date(2012, 0, 1, 23);
+    from = new Date(2012, 0, 1, 11);
     diff = datediff(from, to);
     expect(diff.years).toBe(0);
     expect(diff.months).toBe(0);
@@ -74,8 +74,8 @@ describe('Difference date', function() {
     expect(diff.hours).toBe(12);
   });
   it('Should return correct minutes', function() {
-    from = new Date(2012, 0, 1, 11, 12);
-    to = new Date(2012, 0, 1, 10, 59);
+    to = new Date(2012, 0, 1, 11, 12);
+    from = new Date(2012, 0, 1, 10, 59);
     diff = datediff(from, to);
     expect(diff.years).toBe(0);
     expect(diff.months).toBe(0);
@@ -84,8 +84,8 @@ describe('Difference date', function() {
     expect(diff.minutes).toBe(13);
   });
   it('Should return correct seconds', function() {
-    from = new Date(2012, 0, 1, 11, 12, 1);
-    to = new Date(2012, 0, 1, 10, 59, 59);
+    to = new Date(2012, 0, 1, 11, 12, 1);
+    from = new Date(2012, 0, 1, 10, 59, 59);
     diff = datediff(from, to);
     expect(diff.years).toBe(0);
     expect(diff.months).toBe(0);
