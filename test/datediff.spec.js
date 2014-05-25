@@ -23,7 +23,7 @@ describe('Difference date', function() {
     }).toThrow();
   });
 
-  it('Should return 0 values if "to date" bigger then "from date"', function() {
+  it('Should return 0 values if "from date" bigger then "to date"', function() {
     to = new Date(2012, 0, 1, 0);
     from = new Date(2014, 0, 1, 0);
     diff = datediff(from, to);
