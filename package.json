@@ -2,7 +2,7 @@
   "name": "datediff",
   "version": "0.0.2",
   "description": "Simple module for calculate difference bettwen two date",
-  "main": "index.js",
+  "main": "datediff.js",
   "directories": {
     "test": "test"
   },
