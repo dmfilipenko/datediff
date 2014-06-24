@@ -2,7 +2,7 @@
   "name": "datediff",
   "version": "0.0.2",
   "description": "Simple module for calculate difference bettwen two date",
-  "main": "index.js",
+  "main": "datediff.js",
   "directories": {
     "test": "test"
   },
@@ -10,6 +10,10 @@
     "build":"cp src/datediff.js datediff.js && npm run uglify",
     "uglify":"node node_modules/uglify-js/bin/uglifyjs datediff.js -c -m -o datediff.min.js",
     "test": "node ./node_modules/karma/bin/karma start --single-run"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/dmfilipenko/datediff.git"
   },
   "author": "Dmitriy Filipenko <dmitriy.filipenko@grammarly.com>",
   "license": "MIT",
